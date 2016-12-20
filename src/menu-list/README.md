@@ -75,3 +75,6 @@ Si la props list reçoit un array le menu affichera tous les éléments 'à plat
    </tbody>
 </table>
 
+## Screen
+
+![](./.img/menu-list-1.PNG)
