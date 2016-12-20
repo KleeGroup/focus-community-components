@@ -17,7 +17,7 @@ const propTypes = {
 }
 
 const defaultProps = {
-    labelKey: 'name',
+    labelKey: 'label',
     childrenKey: 'children',
     keyKey: 'id'
 }

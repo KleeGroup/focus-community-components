@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import {translate} from 'focus-core/translation';
-import Link from '../router/link';
+import Link from './link';
 
 const propTypes = {
     labelKey: PropTypes.string,
