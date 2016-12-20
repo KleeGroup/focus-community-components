@@ -78,3 +78,5 @@ Si la props list reçoit un array le menu affichera tous les éléments 'à plat
 ## Screen
 
 ![](./.img/menu-list-1.PNG)
+![](./.img/menu-list-2.PNG)
+![](./.img/menu-list-3.PNG)
