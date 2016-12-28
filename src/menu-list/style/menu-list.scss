@@ -1,0 +1,54 @@
+@import '../../_variables.scss';
+
+[data-vision='menu-liste'] {
+    margin: 0;
+    [data-vision='menu-liste-item'] {
+        padding: 16px 0px 0px 16px;
+        display: block;
+        line-height: inherit;
+        position: relative;
+        ul {
+            padding: 0;
+        }
+        [data-vision="conteiners-with-children"] {
+            .menu-liste-item-left::before {
+                font-family: 'Material Icons';
+                content: 'arrow_drop_up';
+                position: absolute;
+                left: -7px;
+                font-size: 25px;
+                transform: rotate(90deg);
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+            }
+            .menu-liste-item-left.menu-liste-item-left-open::before {
+                transform: rotate(180deg);
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+            }
+        }
+        [data-vision="link-conteiners"], [data-vision="conteiners-with-children"] {
+            display: flex;
+            .menu-liste-item-left {
+                text-decoration: none;
+                color: $primary-color;
+                width: 100%;
+            }
+            .menu-liste-item-left-selected {
+                color: red;
+            }
+            a:hover {
+                color:$primary-color-dark;
+            }
+            a.menu-liste-item-left-selected:hover {
+                color: #DF0400;
+            }
+            .material-icons {
+                color: red;
+            }
+            .menu-liste-item-right {
+                text-decoration: none;
+            }
+        }
+    }
+}
