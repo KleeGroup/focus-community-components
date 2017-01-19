@@ -33,7 +33,7 @@ class TreeView extends Component {
 
     componentWillReceiveProps(nextProps) {
         const {list} = this.state;
-        if(nextProps.list && isEqual(list, nextProps.list)) {
+        if(nextProps.list && !isEqual(list, nextProps.list)) {
             this.setState({list: nextProps.list});
         }
         if(!list || !nextProps.list) {
